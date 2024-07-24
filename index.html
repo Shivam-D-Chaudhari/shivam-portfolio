@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Chaudhari's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Shivam Chaudhari</h1>
+        <p>Email: <a href="mailto:shivamchaudhari21@gnu.ac.in">shivamchaudhari21@gnu.ac.in</a> | 
+           <a href="https://linkedin.com" class="social-link">LinkedIn</a> | 
+           <a href="https://github.com" class="social-link">GitHub</a></p>
+    </header>
+    <nav>
+        <button onclick="showSection('intro')">Introduction</button>
+        <button onclick="showSection('education')">Education</button>
+        <button onclick="showSection('experience')">Experience</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('certificates')">Certificates</button>
+        <button onclick="showSection('interests')">Interests</button>
+    </nav>
+    <main>
+        <section id="intro" class="content-section default-section">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Hello folks!!</h2>
+                    <h1>I am SHIVAM CHAUDHARI</h1>
+                    <p>Web Developer and Website Designer.<br>
+                    IT Enthusiast with Proficiency in UI/UX Design and Web Development.</p>
+                </div>
+                <img src="profile.jpg" alt="Shivam Chaudhari" class="profile-img-intro">
+            </div>
+        </section>
+        <section id="education" class="content-section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Mehsana Urban Vidyalaya Gujarat, Mehsana</strong>
+                    <p>Secondary School Certificate And Higher Secondary Certificate (June 2009 – March 2019 And June 2019 – May 2021)</p>
+                </li>
+                <li>
+                    <strong>U. V. Patel College of Engineering, Ganpat University Gujarat, Kherva</strong>
+                    <p>B. Tech Information Technology (July 2021 – Present)</p>
+                </li>
+            </ul>
+        </section>
+        <section id="experience" class="content-section">
+            <h2>Experience</h2>
+            <p>No industrial experience yet.</p>
+        </section>
+        <section id="projects" class="content-section">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>BookMyTable – Web Application (Group Project) | HTML, CSS, JS, PHP, MySQL</strong>
+                    <p>Role: Web-page designer, Database Handler.</p>
+                    <p>Brief: BookMyTable is a convenient online platform allowing users to easily reserve restaurant tables, providing seamless dining experiences.</p>
+                </li>
+                <li>
+                    <strong>boat-lifestyle.com – Replica (Personal Project) | using .NET</strong>
+                    <p>Brief: Created with .NET where you can view products, add products to the cart by selecting quantity, build bill of products etc.</p>
+                </li>
+                <li>
+                    <strong>To-Do list (Personal Project) | using .NET</strong>
+                    <p>Brief: You can add tasks by schedule, do check mark to the done tasks, remove tasks etc.</p>
+                </li>
+                <li>
+                    <strong>Working prototypes of Ferrari website | using Figma</strong>
+                    <p>Based on Designing skills And Animations skills</p>
+                </li>
+                <li>
+                    <strong>Few small projects as well using HTML, CSS, JS, Python, Figma</strong>
+                    <p>Small projects like tic tac toe game using Python, Puzzle game using Python, many working prototypes of different websites etc.</p>
+                </li>
+            </ul>
+        </section>
+        <section id="skills" class="content-section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: HTML, CSS, JS, Python, C</li>
+                <li>Frameworks: Node.js</li>
+                <li>Database: MySQL</li>
+                <li>Developer Tools: Figma, VS Code, Visual Studio, PyCharm, Google Cloud Platform</li>
+            </ul>
+        </section>
+        <section id="certificates" class="content-section">
+            <h2>Certificates</h2>
+            <ul>
+                <li>CSS, Bootstrap And Javascript And Python Stack Course - Powered by Udemy</li>
+                <li>Python And Flask Demonstrations Practice Course - Powered by Udemy</li>
+                <li>Communication Skills - Offered by TCS ion</li>
+            </ul>
+        </section>
+        <section id="interests" class="content-section">
+            <h2>Interests</h2>
+            <ul>
+                <li>Technical: UI/UX designing, AI, Web Designing</li>
+                <li>Non-technical: Chess, Art, Gaming, Reading</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shivam Chaudhari</p>
+        <button id="toggle-light-mode" class="toggle-button">🌞</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

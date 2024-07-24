@@ -51,11 +51,13 @@ main {
 }
 
 .intro-content {
-    display: flex; align-items: center; justify-content: space-between; max-width: 900px; margin: auto;
+    display: flex; align-items: center; max-width: 900px; margin: auto; flex-wrap: wrap; 
+    justify-content: space-between; /* Space out the text and image */
 }
 
 .intro-text {
-    flex: 1; margin-right: 3rem;
+    flex: 1; text-align: left; margin-right: 2rem; /* Adjust spacing from profile image */
+    margin-bottom: 1rem;
 }
 
 .intro-text h2 {
@@ -110,4 +112,20 @@ footer .toggle-button:hover {
 
 @keyframes slideUp {
     from { transform: translateY(20px); } to { transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column; /* Stack content vertically on mobile */
+        align-items: center; /* Center all items horizontally */
+    }
+
+    .intro-text {
+        margin-right: 0; /* Remove margin to allow proper stacking */
+        text-align: center; /* Center text */
+    }
+
+    .profile-img-intro {
+        margin-top: 1rem; /* Add space above the image */
+    }
 }

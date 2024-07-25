@@ -61,19 +61,19 @@ main {
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.4rem; color: #333; /* black color for headings */
+    margin: 0; font-size: 1.5rem; color: #333; /* black color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.6rem; color: #333; /* black color for names */
+    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* black color for names */
 }
 
 .intro-text p {
-    font-size: 1.1rem; color: #333;
+    font-size: 1.2rem; color: #333;
 }
 
 .profile-img-intro {
-    border-radius: 50%; width: 180px; height: 180px; object-fit: cover;
+    border-radius: 50%; width: 200px; height: 200px; object-fit: cover;
 }
 
 footer {
@@ -133,6 +133,19 @@ footer .toggle-button:hover {
 }
 
 @media (max-width: 768px) {
+    header, footer {
+        padding: 0.5rem; /* Reduced padding for header and footer */
+    }
+
+    header h1, footer p {
+        font-size: 1.2rem; /* Smaller font size for header and footer text */
+    }
+
+    nav button {
+        padding: 0.5rem 1rem; /* Restored button size */
+        font-size: 0.8rem; /* Adjusted font size for buttons */
+    }
+
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
@@ -142,19 +155,13 @@ footer .toggle-button:hover {
     .intro-text {
         margin-right: 0; /* Remove margin to allow proper stacking */
         text-align: center; /* Center text */
-        padding: 0.5rem; /* Add padding for better spacing */
-        font-size: 0.8rem; /* Smaller font size for better fit */
+        font-size: 0.9rem; /* Slightly smaller font size for introduction text */
         max-width: 90%; /* Ensure text section doesn’t exceed screen width */
     }
 
     .profile-img-intro {
-        width: 200px; height: 200px; /* Larger profile image for mobile */
+        width: 220px; height: 220px; /* Slightly larger profile image for mobile */
         margin-top: 1rem; /* Add space above the image */
-    }
-
-    nav button {
-        padding: 0.4rem 0.8rem; /* Smaller button size */
-        font-size: 0.5rem; /* Adjusted font size for better fit */
     }
 
     .content-section {

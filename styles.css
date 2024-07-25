@@ -8,7 +8,7 @@ body {
 }
 
 header, footer {
-    background: #444; color: #fff; padding: 1.5rem 0; text-align: center;
+    background: #333; color: #fff; padding: 1.5rem 0; text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background 0.3s, color 0.3s; width: 100%;
 }
 
@@ -29,12 +29,12 @@ nav {
 }
 
 nav button {
-    background: #e0e0e0; color: #333; border: none; padding: 0.75rem 1.5rem; margin: 0.5rem; cursor: pointer;
+    background: #9c27b0; color: #fff; border: none; padding: 0.75rem 1.5rem; margin: 0.5rem; cursor: pointer;
     transition: background 0.3s, transform 0.2s, box-shadow 0.2s; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav button:hover {
-    background: #d0d0d0; transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: #7b1fa2; transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -42,7 +42,7 @@ main {
 }
 
 .content-section {
-    padding: 2rem; background: #f0f0f0; margin: 1rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem; background: #f4f4f4; margin: 1rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none; animation: fadeIn 0.5s ease-out forwards, slideUp 0.5s ease-out forwards; max-width: 900px; width: 100%;
 }
 
@@ -57,19 +57,19 @@ main {
 
 .intro-text {
     flex: 1; text-align: left; margin-right: 2rem; /* Adjust spacing from profile image */
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; color: #333; /* Default text color */
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.5rem;
+    margin: 0; font-size: 1.5rem; color: #333; /* Purple color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.8rem;
+    margin: 0.5rem 0; font-size: 2.8rem; color: #9c27b0; /* Purple color for names */
 }
 
 .intro-text p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; color: #333;
 }
 
 .profile-img-intro {
@@ -91,7 +91,8 @@ footer .toggle-button:hover {
 }
 
 .light-mode header, .light-mode footer {
-    background: #f4f4f4; color: #333;
+    background: #ddd; /* Slightly lighter gray for header and footer in light mode */
+    color: #333; /* Dark text color for contrast */
 }
 
 .light-mode body {
@@ -103,7 +104,24 @@ footer .toggle-button:hover {
 }
 
 .light-mode nav button {
-    background: #f0f0f0; color: #000;
+    background: #9c27b0; color: #fff;
+}
+
+.dark-mode header, .dark-mode footer {
+    background: #333; /* Dark gray for header and footer in dark mode */
+    color: #fff;
+}
+
+.dark-mode body {
+    background-color: #222;
+}
+
+.dark-mode .content-section {
+    background: #444;
+}
+
+.dark-mode nav button {
+    background: #9c27b0; color: #fff;
 }
 
 @keyframes fadeIn {

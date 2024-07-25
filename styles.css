@@ -61,11 +61,11 @@ main {
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.5rem; color: #333; /* Purple color for headings */
+    margin: 0; font-size: 1.5rem; color: #333; /* black color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.8rem; color: #9c27b0; /* Purple color for names */
+    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* black color for names */
 }
 
 .intro-text p {

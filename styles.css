@@ -133,45 +133,49 @@ footer .toggle-button:hover {
 }
 
 @media (max-width: 768px) {
-    header, footer {
-        padding: 0.5rem; /* Reduced padding for header and footer */
-    }
-
-    header h1, footer p {
-        font-size: 1.2rem; /* Smaller font size for header and footer text */
-    }
-
-    nav button {
-        padding: 0.5rem 1rem; /* Restored button size */
-        font-size: 0.8rem; /* Adjusted font size for buttons */
-    }
-
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
-        max-width: 100%; /* Ensure it fits within mobile screen */
+        max-width: 90%; /* Ensure it fits the mobile screen */
     }
 
     .intro-text {
-        margin-right: 0; /* Remove margin to allow proper stacking */
         text-align: center; /* Center text */
-        font-size: 0.9rem; /* Slightly smaller font size for introduction text */
-        max-width: 90%; /* Ensure text section doesn’t exceed screen width */
+        margin-right: 0; /* Remove margin to allow proper stacking */
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem; /* Smaller font size for headings */
+    }
+
+    .intro-text h1 {
+        font-size: 1.8rem; /* Smaller font size for name */
+    }
+
+    .intro-text p {
+        font-size: 1rem; /* Smaller font size for text */
     }
 
     .profile-img-intro {
-        width: 220px; height: 220px; /* Slightly larger profile image for mobile */
-        margin-top: 1rem; /* Add space above the image */
+        width: 160px; height: 160px; /* Slightly larger image for mobile */
+    }
+
+    nav button {
+        padding: 0.4rem 0.8rem; /* Smaller padding for buttons */
+        font-size: 0.6rem; /* Smaller font size */
     }
 
     .content-section {
-        padding: 1rem; background: #f4f4f4; margin: 0.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        width: calc(100% - 1rem); /* Adjusted width for mobile */
-        max-width: 100%; /* Ensure it fits within mobile screen */
+        padding: 0.5rem; /* Smaller padding for the content section */
+        margin: 0.5rem; /* Adjusted margin */
+        max-width: 95%; /* Further reduce maximum width */
     }
 
-    nav {
-        margin: 0; /* Remove margins to fit within screen */
-        padding: 0; /* Remove padding to fit within screen */
+    footer {
+        padding: 0.5rem 0; /* Smaller padding for the footer */
+    }
+
+    footer p {
+        font-size: 0.8rem; /* Smaller font size for footer text */
     }
 }

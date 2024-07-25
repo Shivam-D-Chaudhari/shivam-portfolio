@@ -1,3 +1,4 @@
+/* Global Styles */
 html, body {
     height: 100%; margin: 0; font-family: 'Times New Roman', serif; line-height: 1.6; box-sizing: border-box;
     background-color: #c0c0c0; transition: background-color 0.3s, color 0.3s;
@@ -61,11 +62,11 @@ main {
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.5rem; color: #333; /* black color for headings */
+    margin: 0; font-size: 1.5rem; color: #333; /* Black color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* black color for names */
+    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* Black color for names */
 }
 
 .intro-text p {
@@ -132,6 +133,7 @@ footer .toggle-button:hover {
     from { transform: translateY(20px); } to { transform: translateY(0); }
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
@@ -141,9 +143,28 @@ footer .toggle-button:hover {
     .intro-text {
         margin-right: 0; /* Remove margin to allow proper stacking */
         text-align: center; /* Center text */
+        padding: 0.5rem; /* Add padding for better spacing */
+        font-size: 0.9rem; /* Adjust font size for better fit */
     }
 
     .profile-img-intro {
+        width: 150px; height: 150px; /* Adjust profile image size */
         margin-top: 1rem; /* Add space above the image */
+    }
+
+    nav button {
+        padding: 0.6rem 1.2rem; /* Slightly smaller button size */
+        font-size: 0.8rem; /* Adjust font size for better fit */
+    }
+
+    .content-section {
+        padding: 1rem; background: #f4f4f4; margin: 0.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: calc(100% - 1rem); /* Adjusted width for mobile */
+        max-width: 100%; /* Ensure it fits within mobile screen */
+    }
+
+    nav {
+        margin: 0; /* Remove margins to fit within screen */
+        padding: 0; /* Remove padding to fit within screen */
     }
 }

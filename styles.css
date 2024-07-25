@@ -133,6 +133,18 @@ footer .toggle-button:hover {
 }
 
 @media (max-width: 768px) {
+    header h1, footer p {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav button {
+        padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 0.25rem;
+    }
+
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
@@ -143,7 +155,32 @@ footer .toggle-button:hover {
         text-align: center; /* Center text */
     }
 
+    .intro-text h1 {
+        font-size: 2rem; /* Adjust the name font size for mobile */
+    }
+
+    .intro-text h2 {
+        font-size: 1.2rem; /* Adjust the heading font size for mobile */
+    }
+
+    .intro-text p {
+        font-size: 0.9rem; /* Adjust the paragraph font size for mobile */
+    }
+
     .profile-img-intro {
-        margin-top: 1rem; /* Add space above the image */
+        width: 150px; height: 150px; /* Adjust the image size for mobile */
+    }
+
+    .content-section {
+        padding: 0.5rem; /* Reduce padding for mobile */
+        margin: 0.5rem; /* Reduce margin for mobile */
+    }
+
+    .content-section h2 {
+        font-size: 1.2rem; /* Adjust section heading size for mobile */
+    }
+
+    .content-section p, .content-section li {
+        font-size: 0.8rem; /* Adjust text size for mobile */
     }
 }

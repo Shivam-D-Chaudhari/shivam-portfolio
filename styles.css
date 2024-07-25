@@ -137,6 +137,14 @@ footer .toggle-button:hover {
         display: flex; flex-direction: column; justify-content: space-between; /* Ensure footer sticks to bottom */
     }
 
+    header {
+        padding: 1rem 0; /* Smaller padding for header on mobile */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size for header title */
+    }
+
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
@@ -146,22 +154,23 @@ footer .toggle-button:hover {
     .intro-text {
         text-align: center; /* Center text */
         margin-right: 0; /* Remove margin to allow proper stacking */
+        font-size: 0.9rem; /* Smaller text size */
     }
 
     .intro-text h2 {
-        font-size: 1.2rem; /* Smaller font size for headings */
+        font-size: 1.1rem; /* Smaller font size for headings */
     }
 
     .intro-text h1 {
-        font-size: 1.8rem; /* Smaller font size for name */
+        font-size: 1.6rem; /* Smaller font size for name */
     }
 
     .intro-text p {
-        font-size: 1rem; /* Smaller font size for text */
+        font-size: 0.9rem; /* Smaller font size for text */
     }
 
     .profile-img-intro {
-        width: 160px; height: 160px; /* Slightly larger image for mobile */
+        width: 150px; height: 150px; /* Slightly larger image for mobile */
     }
 
     nav button {

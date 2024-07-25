@@ -143,7 +143,11 @@ footer .toggle-button:hover {
     }
 
     nav button {
-        padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 0.25rem;
+        padding: 0.25rem 0.5rem; font-size: 0.75rem; margin: 0.25rem; 
+    }
+
+    nav {
+        margin: 0.5rem 0; /* Reduce the vertical margin for the nav on mobile */
     }
 
     .intro-content {

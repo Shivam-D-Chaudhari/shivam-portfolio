@@ -174,8 +174,9 @@ footer .toggle-button:hover {
     }
 
     nav button {
-        padding: 0.4rem 0.8rem; /* Smaller padding for buttons */
-        font-size: 0.6rem; /* Smaller font size */
+        padding: 0.5rem 1rem; /* Slightly larger padding for buttons */
+        font-size: 0.8rem; /* Adjust font size */
+        margin: 0.25rem; /* Reduce margin between buttons */
     }
 
     .content-section {

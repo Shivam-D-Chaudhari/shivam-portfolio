@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-    display: flex; flex-direction: column; align-items: center;
+    display: flex; flex-direction: column; align-items: center; min-height: 100vh;
 }
 
 header, footer {
@@ -78,7 +78,7 @@ main {
 
 footer {
     position: relative; display: flex; justify-content: center; align-items: center; padding: 1rem 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); width: 100%; 
 }
 
 footer .toggle-button {
@@ -133,6 +133,10 @@ footer .toggle-button:hover {
 }
 
 @media (max-width: 768px) {
+    body {
+        display: flex; flex-direction: column; justify-content: space-between; /* Ensure footer sticks to bottom */
+    }
+
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
@@ -173,6 +177,7 @@ footer .toggle-button:hover {
 
     footer {
         padding: 0.5rem 0; /* Smaller padding for the footer */
+        box-shadow: none; /* Remove shadow to minimize space */
     }
 
     footer p {

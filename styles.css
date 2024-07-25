@@ -1,3 +1,4 @@
+/* Global Styles */
 html, body {
     height: 100%; margin: 0; font-family: 'Times New Roman', serif; line-height: 1.6; box-sizing: border-box;
     background-color: #c0c0c0; transition: background-color 0.3s, color 0.3s;
@@ -8,16 +9,12 @@ body {
 }
 
 header, footer {
-    background: #333; color: #fff; padding: 0.5rem 0; text-align: center; /* Adjusted padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); transition: background 0.3s, color 0.3s; width: 100%; /* Adjusted shadow */
+    background: #333; color: #fff; padding: 1.5rem 0; text-align: center; /* Desktop padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: background 0.3s, color 0.3s; width: 100%;
 }
 
 header h1, footer p {
-    margin: 0; font-size: 1.2rem; /* Reduced font size */
-}
-
-header p {
-    font-size: 0.6rem; /* Reduced font size for links */
+    margin: 0; font-size: 2rem; /* Desktop font size */
 }
 
 header p a {
@@ -29,26 +26,25 @@ header p a:hover {
 }
 
 nav {
-    text-align: center; margin: 0.5rem 0; width: 100%; /* Reduced margin */
+    text-align: center; margin: 1.5rem 0; width: 100%; /* Desktop margin */
 }
 
 nav button {
-    background: #9c27b0; color: #fff; border: none; padding: 0.6rem 0.8rem; /* Slightly increased padding */
-    margin: 0.25rem; font-size: 0.7rem; /* Slightly increased font size */
-    cursor: pointer; transition: background 0.3s, transform 0.2s, box-shadow 0.2s; border-radius: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: #9c27b0; color: #fff; border: none; padding: 0.75rem 1.5rem; /* Desktop padding */
+    margin: 0.5rem; cursor: pointer; transition: background 0.3s, transform 0.2s, box-shadow 0.2s; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav button:hover {
-    background: #7b1fa2; transform: scale(1.05); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #7b1fa2; transform: scale(1.05); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 main {
-    flex: 1; display: flex; justify-content: center; width: 100%; 
+    flex: 1; display: flex; justify-content: center; width: 100%;
 }
 
 .content-section {
-    padding: 1rem; background: #f4f4f4; margin: 0.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    display: none; animation: fadeIn 0.5s ease-out forwards, slideUp 0.5s ease-out forwards; width: calc(100% - 1rem);
+    padding: 2rem; background: #f4f4f4; margin: 1rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; animation: fadeIn 0.5s ease-out forwards, slideUp 0.5s ease-out forwards; max-width: 900px; width: 100%;
 }
 
 .default-section {
@@ -56,44 +52,39 @@ main {
 }
 
 .intro-content {
-    display: flex; align-items: center; flex-direction: column; /* Stack content vertically on mobile */
-    max-width: 100%; margin: auto; flex-wrap: wrap; /* Ensure content fits within screen */
+    display: flex; align-items: center; max-width: 900px; margin: auto; flex-wrap: wrap; 
+    justify-content: space-between; /* Space out the text and image */
 }
 
 .intro-text {
-    text-align: center; color: #333; /* Center text */
-    margin-bottom: 0.5rem; /* Reduced margin */
+    flex: 1; text-align: left; margin-right: 2rem; /* Adjust spacing from profile image */
+    margin-bottom: 1rem; color: #333; /* Default text color */
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.5rem; color: #333; /* Slightly increased font size for headings */
+    margin: 0; font-size: 1.5rem; color: #333; /* Black color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.2rem; color: #333; /* Slightly increased font size for name */
+    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* Black color for names */
 }
 
 .intro-text p {
-    font-size: 1.1rem; color: #333; /* Slightly increased font size for text */
+    font-size: 1.2rem; color: #333;
 }
 
 .profile-img-intro {
-    border-radius: 50%; width: 150px; height: 150px; object-fit: cover; /* Adjusted image size */
-    margin-top: 1rem; /* Added margin for spacing */
+    border-radius: 50%; width: 200px; height: 200px; object-fit: cover;
 }
 
 footer {
-    position: relative; display: flex; justify-content: center; align-items: center; padding: 0.5rem 0; /* Reduced padding */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2); width: 100%; margin-top: auto;
-}
-
-footer p {
-    font-size: 0.8rem; /* Slightly larger font size for footer text */
+    position: relative; display: flex; justify-content: center; align-items: center; padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); width: 100%;
 }
 
 footer .toggle-button {
-    position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: none;
-    padding: 0.25rem; border-radius: 50%; cursor: pointer; transition: background 0.3s, color 0.3s;
+    position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); background: #e0e0e0; border: none;
+    padding: 0.5rem; border-radius: 50%; cursor: pointer; transition: background 0.3s, color 0.3s;
 }
 
 footer .toggle-button:hover {
@@ -142,30 +133,41 @@ footer .toggle-button:hover {
     from { transform: translateY(20px); } to { transform: translateY(0); }
 }
 
+/* Mobile Styles */
 @media (max-width: 405px) {
-    .intro-content {
-        padding: 0.5rem; /* Adjusted padding for mobile */
+    header, footer {
+        padding: 0.5rem 0; /* Reduced padding for mobile */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adjusted shadow for mobile */
     }
 
-    .intro-text {
-        margin-right: 0; /* Removed right margin */
-    }
-
-    .profile-img-intro {
-        width: 120px; height: 120px; /* Further reduced image size */
-    }
-
-    .content-section {
-        padding: 0.75rem; /* Slightly increased padding for mobile */
-        margin: 0.5rem; /* Adjusted margin for mobile */
-    }
-
-    nav {
-        margin: 0.5rem 0; /* Reduced margin for nav */
+    header h1, footer p {
+        font-size: 1rem; /* Reduced font size */
     }
 
     nav button {
-        padding: 0.5rem 0.8rem; /* Slightly increased padding */
-        font-size: 0.6rem; /* Slightly increased font size */
+        padding: 0.4rem 0.8rem; /* Reduced padding for mobile */
+        font-size: 0.6rem; /* Reduced font size for mobile */
+    }
+
+    .content-section {
+        padding: 0.5rem; background: #f4f4f4; margin: 0.5rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: calc(100% - 1rem); /* Adjusted width for mobile */
+        max-width: 100%; /* Ensure it fits within mobile screen */
+    }
+
+    .intro-content {
+        flex-direction: column; /* Stack content vertically on mobile */
+        align-items: center; /* Center all items horizontally */
+    }
+
+    .intro-text {
+        margin-right: 0; /* Remove margin to allow proper stacking */
+        text-align: center; /* Center text */
+        padding: 0.5rem; /* Added padding for better spacing */
+    }
+
+    .profile-img-intro {
+        width: 100px; height: 100px; /* Adjusted image size for mobile */
+        margin-top: 0.5rem; /* Added space above the image */
     }
 }

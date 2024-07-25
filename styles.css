@@ -1,4 +1,3 @@
-/* Global Styles */
 html, body {
     height: 100%; margin: 0; font-family: 'Times New Roman', serif; line-height: 1.6; box-sizing: border-box;
     background-color: #c0c0c0; transition: background-color 0.3s, color 0.3s;
@@ -62,11 +61,11 @@ main {
 }
 
 .intro-text h2 {
-    margin: 0; font-size: 1.5rem; color: #333; /* Black color for headings */
+    margin: 0; font-size: 1.5rem; color: #333; /* black color for headings */
 }
 
 .intro-text h1 {
-    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* Black color for names */
+    margin: 0.5rem 0; font-size: 2.8rem; color: #333; /* black color for names */
 }
 
 .intro-text p {
@@ -133,11 +132,11 @@ footer .toggle-button:hover {
     from { transform: translateY(20px); } to { transform: translateY(0); }
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
     .intro-content {
         flex-direction: column; /* Stack content vertically on mobile */
         align-items: center; /* Center all items horizontally */
+        max-width: 100%; /* Ensure it fits within mobile screen */
     }
 
     .intro-text {
@@ -145,6 +144,7 @@ footer .toggle-button:hover {
         text-align: center; /* Center text */
         padding: 0.5rem; /* Add padding for better spacing */
         font-size: 0.9rem; /* Adjust font size for better fit */
+        max-width: 90%; /* Ensure text section doesn’t exceed screen width */
     }
 
     .profile-img-intro {
@@ -153,8 +153,8 @@ footer .toggle-button:hover {
     }
 
     nav button {
-        padding: 0.6rem 1.2rem; /* Slightly smaller button size */
-        font-size: 0.8rem; /* Adjust font size for better fit */
+        padding: 0.5rem 1rem; /* Smaller button size */
+        font-size: 0.6rem; /* Adjusted font size for better fit */
     }
 
     .content-section {
